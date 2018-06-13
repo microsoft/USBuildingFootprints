@@ -8,13 +8,15 @@ These data are licensed by Microsoft under the Open Data Commons Open Database L
 
 ## FAQ
 #### What the data include:
-Approximately 125 million building footprints in all 50 US States in GeoJSON format. 
+Approximately 125 million building footprint polygon geometry in all 50 US States in GeoJSON format. 
 #### Creation Details:
 The building extraction is done in two stages:
 1.	Semantic Segmentation – Recognizing building pixels on the aerial image using DNNs
 2.	Polygonization – Converting building pixel blobs into polygons
 #### Semantic Segmentation
 ![](/images/segmentation.PNG)
+
+
 DNN architecture
 The network foundation is ResNet34 which can be found [here](https://github.com/Microsoft/CNTK/blob/master/PretrainedModels/Image.md#resnet). In order to produce pixel prediction output, we have appended RefineNet upsampling layers described in this [paper](https://arxiv.org/abs/1611.06612).
 The model is fully-convolutional, meaning that the model can be applied on an image of any size (constrained by GPU memory, 4096x4096 in our case). 
@@ -56,6 +58,12 @@ On our evaluation set contains ~15k building. The metrics on the set are:
 1. IoU is 0.85, Shape distance is 0.33, Average rotation error is 1.6 degrees
 2. The metrics are better or similar compared to OSM building metrics against the labels
 
+| State         | Bldg Number   | Unziped MB  |
+| ------------- |:-------------:| -----:|
+| [Alabama](https://usbuildingdata.blob.core.windows.net/usbuildings/Alabama.zip)       |2,392,171 | 711.76 |
+| [Alaska](https://usbuildingdata.blob.core.windows.net/usbuildings/Alaska.zip)      | 232,159      |   123.06 |
+| [Arizona](https://usbuildingdata.blob.core.windows.net/usbuildings/Arizona.zip) | 2,492,999    |    773.50 |
+
 
 #### Data Vintage:
 The vintage of the footprints depends on the vintage of the underlying imagery. Because Bing Imagery is a composite of mutliple sources it is difficult to know the exact dates.
@@ -66,8 +74,8 @@ Our metrics show that in the vast majority of cases the quality is at least as g
 #### Why are the data being released?
 Microsoft has a continued interest in supporting a thriving OpenStreetMap ecosystem. 
 
-#### Should we import it in to OpenStreetMap?
-No. Never blindly import data in to OSM without first checking the quality locally and discussing an import plan with the local community. Always follow the OSM import community guidelines. 
+#### Should we import the data in to OpenStreetMap?
+NO. Never blindly import data in to OSM without first checking the quality locally and discussing an import plan with the local community. Always follow the OSM import community guidelines. 
 
 
 

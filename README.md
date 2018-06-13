@@ -84,6 +84,10 @@ On our evaluation set contains ~15k building. The metrics on the set are:
 | [Maryland](https://usbuildingdata.blob.core.windows.net/usbuildings/Maryland.zip)|1,590,655|467.61|
 | [Massachusetts](https://usbuildingdata.blob.core.windows.net/usbuildings/Massachusetts.zip)|1,982,583|596.01|
 | [Michigan](https://usbuildingdata.blob.core.windows.net/usbuildings/Michigan.zip)|4,854,138|1410| 
+| [Minnesota](https://usbuildingdata.blob.core.windows.net/usbuildings/Minnesota.zip)|2,792,296|838.22|
+| [Mississippi](https://usbuildingdata.blob.core.windows.net/usbuildings/Mississippi.zip)| 1,470,285|438.99|
+| [Missouri](https://usbuildingdata.blob.core.windows.net/usbuildings/Missouri.zip)|3,096,410|904.84|
+| [Montana](https://usbuildingdata.blob.core.windows.net/usbuildings/Montana.zip)|762,428|226.78|
 
 
 

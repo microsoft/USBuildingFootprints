@@ -59,7 +59,7 @@ On our evaluation set contains ~15k building. The metrics on the set are:
 1. IoU is 0.85, Shape distance is 0.33, Average rotation error is 1.6 degrees
 2. The metrics are better or similar compared to OSM building metrics against the labels
 
-| State         | Bldg Number   | Unziped MB  |
+| State         | Number of Bldgs  | Unziped MB  |
 | ------------- |:-------------:| -----:|
 | [Alabama](https://usbuildingdata.blob.core.windows.net/usbuildings/Alabama.zip)       |2,392,171 | 711.76 |
 | [Alaska](https://usbuildingdata.blob.core.windows.net/usbuildings/Alaska.zip)      | 232,159      |   123.06 |
@@ -70,6 +70,21 @@ On our evaluation set contains ~15k building. The metrics on the set are:
 | [Connecticut](https://usbuildingdata.blob.core.windows.net/usbuildings/Connecticut.zip)|1,156,638|350.88|
 | [Delaware](https://usbuildingdata.blob.core.windows.net/usbuildings/Delaware.zip)|331,654 |99.91|
 | [DistrictOfColumbia](https://usbuildingdata.blob.core.windows.net/usbuildings/DistrictofColumbia.zip)|58,330|18.00|
+| [Florida](https://usbuildingdata.blob.core.windows.net/usbuildings/Florida.zip)|6,532,545|1960|
+| [Georgia](https://usbuildingdata.blob.core.windows.net/usbuildings/Georgia.zip)|3,801,461|1100|
+| [Hawaii]()|252,894|75.79|
+| [Idaho](https://usbuildingdata.blob.core.windows.net/usbuildings/Idaho.zip)|883,618|268.31|
+| [Illinois](https://usbuildingdata.blob.core.windows.net/usbuildings/Illinois.zip)|4,783,021|1380|
+| [Indiana](https://usbuildingdata.blob.core.windows.net/usbuildings/Indiana.zip)|3,224,996|961.83|
+| [Iowa](https://usbuildingdata.blob.core.windows.net/usbuildings/Iowa.zip)|2,013,085|584.85|
+| [Kansas](https://usbuildingdata.blob.core.windows.net/usbuildings/Kansas.zip)|1,564,845|460.28|
+| [Kentucky](https://usbuildingdata.blob.core.windows.net/usbuildings/Kentucky.zip)|2,363,324| 685.64 |
+| [Louisiana](https://usbuildingdata.blob.core.windows.net/usbuildings/Louisiana.zip)|2,005,341|608.33|
+| [Maine](https://usbuildingdata.blob.core.windows.net/usbuildings/Maine.zip)|736,346|218.32|
+| [Maryland](https://usbuildingdata.blob.core.windows.net/usbuildings/Maryland.zip)|1,590,655|467.61|
+| [Massachusetts](https://usbuildingdata.blob.core.windows.net/usbuildings/Massachusetts.zip)|1,982,583|596.01|
+| [Michigan](https://usbuildingdata.blob.core.windows.net/usbuildings/Michigan.zip)|4,854,138|1410| 
+
 
 
 

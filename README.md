@@ -14,6 +14,7 @@ The building extraction is done in two stages:
 1.	Semantic Segmentation – Recognizing building pixels on the aerial image using DNNs
 2.	Polygonization – Converting building pixel blobs into polygons
 #### Semantic Segmentation
+![](/images/segmentation.PNG)
 DNN architecture
 The network foundation is ResNet34 which can be found [here](https://github.com/Microsoft/CNTK/blob/master/PretrainedModels/Image.md#resnet). In order to produce pixel prediction output, we have appended RefineNet upsampling layers described in this [paper](https://arxiv.org/abs/1611.06612).
 The model is fully-convolutional, meaning that the model can be applied on an image of any size (constrained by GPU memory, 4096x4096 in our case). 
@@ -29,6 +30,7 @@ The pixel error on the evaluation set is 1.15%.
 Pixel recall/precision = 94.5%/94.5%
 
 #### Polygonization
+![](/images/polygonization.PNG)
 Method description
 We developed a method that approximates the prediction pixels into polygons making decisions based on the whole prediction feature space. This is very different from standard approaches, e.g. Douglas-Pecker algorithm, which are greedy in nature. The method tries to impose some of a priory building properties, which are, at the moment, manually defined and automatically tuned. Some of these a priory properties are:
 1. The building edge must be of at least some length, both relative and absolute, e.g. 3m
@@ -47,6 +49,8 @@ We track various metrics to measure the quality of the output:
 1. Intersection over Union – This is the standard metric measuring the overlap quality against the labels
 2. Shape distance – With this metric we measure the polygon outline similarity
 3. Dominant angle rotation error – This measures the polygon rotation deviation
+
+![](/images/bldgmetrics.JPG)
 
 On our evaluation set contains ~15k building. The metrics on the set are:
 1. IoU is 0.85, Shape distance is 0.33, Average rotation error is 1.6 degrees

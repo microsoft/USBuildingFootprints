@@ -1,3 +1,76 @@
+Introduction 
+-------------------
+This dataset contains approximately 125 million computer generated building footprints in all 50 US states. This data are freely available for download and use.  
+
+License
+-------------------
+These data are licensed by Microsoft under the Open Data Commons Open Database License (ODbL) 
+
+## FAQ
+#### What the data include:
+Approximately 125 million building footprints in all 50 US States in GeoJSON format. 
+#### Creation Details:
+The building extraction is done in two stages:
+1.	Semantic Segmentation – Recognizing building pixels on the aerial image using DNNs
+2.	Polygonization – Converting building pixel blobs into polygons
+#### Semantic Segmentation
+DNN architecture
+The network foundation is ResNet34 which can be found [here](https://github.com/Microsoft/CNTK/blob/master/PretrainedModels/Image.md#resnet). In order to produce pixel prediction output, we have appended RefineNet upsampling layers described in this [paper](https://arxiv.org/abs/1611.06612).
+The model is fully-convolutional, meaning that the model can be applied on an image of any size (constrained by GPU memory, 4096x4096 in our case). 
+
+#### Training details
+The training set consists of 5 million labeled images. Majority of the satellite images cover diverse residential areas in US. For the sake of good set representation, we have enriched the set with samples from various areas covering mountains, glaciers, forests, deserts, beaches, coasts, etc.
+Images in the set are of 256x256 pixel size with 1 ft/pixel resolution.
+The training is done with CNTK toolkit using 32 GPUs.
+
+#### Metrics
+These are the intermediate stage metrics we use to track DNN model improvements and they are pixel based.
+The pixel error on the evaluation set is 1.15%.
+Pixel recall/precision = 94.5%/94.5%
+
+#### Polygonization
+Method description
+We developed a method that approximates the prediction pixels into polygons making decisions based on the whole prediction feature space. This is very different from standard approaches, e.g. Douglas-Pecker algorithm, which are greedy in nature. The method tries to impose some of a priory building properties, which are, at the moment, manually defined and automatically tuned. Some of these a priory properties are:
+1. The building edge must be of at least some length, both relative and absolute, e.g. 3m
+2. Consecutive edge angles are likely to be 90 degrees
+3. Consecutive angles cannot be very sharp, smaller by some auto-tuned threshold, e.g. 30 degrees
+4. Building angles likely have very few dominant angles, meaning all building edges are forming angle of (dominant angle +- n*pi/2)
+
+In near future, we will be looking to deduce this automatically from the vast existing building information.
+
+#### Metrics
+Building matching metrics:
+1. Precision = 99.3%
+2. Recall = 93.5%
+
+We track various metrics to measure the quality of the output:
+1. Intersection over Union – This is the standard metric measuring the overlap quality against the labels
+2. Shape distance – With this metric we measure the polygon outline similarity
+3. Dominant angle rotation error – This measures the polygon rotation deviation
+
+On our evaluation set contains ~15k building. The metrics on the set are:
+1. IoU is 0.85, Shape distance is 0.33, Average rotation error is 1.6 degrees
+2. The metrics are better or similar compared to OSM building metrics against the labels
+
+
+
+#### Data Vintage:
+The footprints were digitized in 2015 from imagery captured in 2014 & 2015 
+
+#### Why are the data being released?
+Microsoft has a continued interest in supporting a thriving OpenStreetMap ecosystem. 
+
+
+
+
+
+
+
+
+
+
+
+
 
 # Contributing
 

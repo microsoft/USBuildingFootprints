@@ -33,6 +33,7 @@ Pixel recall/precision = 94.5%/94.5%
 
 #### Polygonization
 ![](/images/polygonization.PNG)
+
 Method description
 We developed a method that approximates the prediction pixels into polygons making decisions based on the whole prediction feature space. This is very different from standard approaches, e.g. Douglas-Pecker algorithm, which are greedy in nature. The method tries to impose some of a priory building properties, which are, at the moment, manually defined and automatically tuned. Some of these a priory properties are:
 1. The building edge must be of at least some length, both relative and absolute, e.g. 3m
@@ -63,6 +64,13 @@ On our evaluation set contains ~15k building. The metrics on the set are:
 | [Alabama](https://usbuildingdata.blob.core.windows.net/usbuildings/Alabama.zip)       |2,392,171 | 711.76 |
 | [Alaska](https://usbuildingdata.blob.core.windows.net/usbuildings/Alaska.zip)      | 232,159      |   123.06 |
 | [Arizona](https://usbuildingdata.blob.core.windows.net/usbuildings/Arizona.zip) | 2,492,999    |    773.50 |
+| [Arkansas](https://usbuildingdata.blob.core.windows.net/usbuildings/Arkansas.zip)|1,499,025|443.99|
+| [California](https://usbuildingdata.blob.core.windows.net/usbuildings/California.zip)|10,556,550|3,240|
+| [Colorado](https://usbuildingdata.blob.core.windows.net/usbuildings/Colorado.zip)|2,043,866|617.68|
+| [Connecticut](https://usbuildingdata.blob.core.windows.net/usbuildings/Connecticut.zip)|1,156,638|350.88|
+| [Delaware](https://usbuildingdata.blob.core.windows.net/usbuildings/Delaware.zip)|331,654 |99.91|
+| [DistrictOfColumbia](https://usbuildingdata.blob.core.windows.net/usbuildings/DistrictofColumbia.zip)|58,330|18.00|
+
 
 
 #### Data Vintage:

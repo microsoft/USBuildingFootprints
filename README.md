@@ -73,7 +73,7 @@ Maybe. Never blindly import data in to OSM without first checking the local qual
 
 
 
-| State         | Number of Bldgs  | Unziped MB  |
+| State         | Number of Buildings  | Unziped MB  |
 | ------------- |:-------------:| -----:|
 | [Alabama](https://usbuildingdata.blob.core.windows.net/usbuildings/Alabama.zip)       |2,392,171 | 711.76 |
 | [Alaska](https://usbuildingdata.blob.core.windows.net/usbuildings/Alaska.zip)      | 232,159      |   123.06 |

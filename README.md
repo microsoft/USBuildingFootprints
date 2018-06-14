@@ -1,6 +1,6 @@
 Introduction 
 -------------------
-This dataset contains approximately 125 million computer generated building footprints in all 50 US states. This data are freely available for download and use.  
+This dataset contains 124,885,597 million computer generated building footprints in all 50 US states. This data are freely available for download and use.  
 
 License
 -------------------
@@ -59,6 +59,20 @@ On our evaluation set contains ~15k building. The metrics on the set are:
 1. IoU is 0.85, Shape distance is 0.33, Average rotation error is 1.6 degrees
 2. The metrics are better or similar compared to OSM building metrics against the labels
 
+#### Data Vintage:
+The vintage of the footprints depends on the vintage of the underlying imagery. Because Bing Imagery is a composite of mutliple sources it is difficult to know the exact dates.
+
+#### How good is the data?:
+Our metrics show that in the vast majority of cases the quality is at least as good as data hand digitized buildings in OpenStreetMap. It is not perfect, particularly in dense urban areas but it is still awesome.
+
+#### Why are the data being released?
+Microsoft has a continued interest in supporting a thriving OpenStreetMap ecosystem. 
+
+#### Should we import the data in to OpenStreetMap?
+Maybe. Never blindly import data in to OSM without first checking the local quality. While the metrics show that this data meets or exeeds the quality of hand drawn building footprints, the data does vary in quality from place to place, between rural and urban and so on. Inspect quality locally and discuss an import plan with the local community. Always follow the [OSM import community guidelines](https://wiki.openstreetmap.org/wiki/Import/Guidelines). 
+
+
+
 | State         | Number of Bldgs  | Unziped MB  |
 | ------------- |:-------------:| -----:|
 | [Alabama](https://usbuildingdata.blob.core.windows.net/usbuildings/Alabama.zip)       |2,392,171 | 711.76 |
@@ -90,7 +104,7 @@ On our evaluation set contains ~15k building. The metrics on the set are:
 | [Montana](https://usbuildingdata.blob.core.windows.net/usbuildings/Montana.zip)|762,428|226.78|
 | [Nebraska](https://usbuildingdata.blob.core.windows.net/usbuildings/Nebraska.zip)|1,135,526|330.05|
 | [Nevada](https://usbuildingdata.blob.core.windows.net/usbuildings/Nebraska.zip)|847,575|261.59|
-| [New Hampshire](https://usbuildingdata.blob.core.windows.net/usbuildings/NewHampshire.zip)|558,850|169.91|
+| [New Hamshire](https://usbuildingdata.blob.core.windows.net/usbuildings/NewHampshire.zip)|558,850|169.91|
 | [New Jersey](https://usbuildingdata.blob.core.windows.net/usbuildings/NewJersey.zip)|2,370,475|701.58|
 | [New Mexico](https://usbuildingdata.blob.core.windows.net/usbuildings/NewMexico.zip)|985,820|304.70|
 | [New York](https://usbuildingdata.blob.core.windows.net/usbuildings/NewYork.zip)|4,788,312|1390|
@@ -102,21 +116,18 @@ On our evaluation set contains ~15k building. The metrics on the set are:
 | [Pennsylvania](https://usbuildingdata.blob.core.windows.net/usbuildings/Pennsylvania.zip)|4,801,561|1390|
 | [Rhode Island](https://usbuildingdata.blob.core.windows.net/usbuildings/RhodeIsland.zip)|348,566|103.63|
 | [South Carolina](https://usbuildingdata.blob.core.windows.net/usbuildings/SouthCarolina.zip)|2,134,688|629.38 |
+| [South Dakota](https://usbuildingdata.blob.core.windows.net/usbuildings/SouthDakota.zip)|649,233|189.85|
+| [Tennessee](https://usbuildingdata.blob.core.windows.net/usbuildings/Tennessee.zip)|2,964,339|875.41|
+| [Texas](https://usbuildingdata.blob.core.windows.net/usbuildings/Texas.zip)|9,638,970|2830|
+| [Utah](https://usbuildingdata.blob.core.windows.net/usbuildings/Utah.zip)|980,745|298.24|
+| [Vermont](https://usbuildingdata.blob.core.windows.net/usbuildings/Vermont.zip)|346,038| 104.33|
+| [Virginia](https://usbuildingdata.blob.core.windows.net/usbuildings/Virginia.zip)|3,020,994|880.71|
+| [Washington](https://usbuildingdata.blob.core.windows.net/usbuildings/Washington.zip)|2,910,981|888.41|
+| [West Virginia](https://usbuildingdata.blob.core.windows.net/usbuildings/WestVirginia.zip)|1,020,048|295.15|
 
 
 
 
-#### Data Vintage:
-The vintage of the footprints depends on the vintage of the underlying imagery. Because Bing Imagery is a composite of mutliple sources it is difficult to know the exact dates.
-
-#### How good is the data?:
-Our metrics show that in the vast majority of cases the quality is at least as good as data hand digitized buildings in OpenStreetMap. It is not perfect, particularly in dense urban areas but it is still awesome.
-
-#### Why are the data being released?
-Microsoft has a continued interest in supporting a thriving OpenStreetMap ecosystem. 
-
-#### Should we import the data in to OpenStreetMap?
-NO. Never blindly import data in to OSM without first checking the quality locally and discussing an import plan with the local community. Always follow the OSM import community guidelines. 
 
 
 

@@ -88,6 +88,17 @@ On our evaluation set contains ~15k building. The metrics on the set are:
 | [Mississippi](https://usbuildingdata.blob.core.windows.net/usbuildings/Mississippi.zip)| 1,470,285|438.99|
 | [Missouri](https://usbuildingdata.blob.core.windows.net/usbuildings/Missouri.zip)|3,096,410|904.84|
 | [Montana](https://usbuildingdata.blob.core.windows.net/usbuildings/Montana.zip)|762,428|226.78|
+| [Nebraska](https://usbuildingdata.blob.core.windows.net/usbuildings/Nebraska.zip)|1,135,526|330.05|
+| [Nevada](https://usbuildingdata.blob.core.windows.net/usbuildings/Nebraska.zip)|847,575|261.59|
+| [NewHampshire](https://usbuildingdata.blob.core.windows.net/usbuildings/NewHampshire.zip)|558,850|169.91|
+| [NewJersey](https://usbuildingdata.blob.core.windows.net/usbuildings/NewJersey.zip)|2,370,475|701.58|
+| [NewMexico](https://usbuildingdata.blob.core.windows.net/usbuildings/NewMexico.zip)|985,820|304.70|
+| [NewYork](https://usbuildingdata.blob.core.windows.net/usbuildings/NewYork.zip)|4,788,312|1390|
+| [NorthCarolina](https://usbuildingdata.blob.core.windows.net/usbuildings/NorthCarolina.zip)|4,504,348|1290|
+| [NorthDakota](https://usbuildingdata.blob.core.windows.net/usbuildings/NorthDakota.zip)|557,809|165.65 |
+| [Ohio](https://usbuildingdata.blob.core.windows.net/usbuildings/Ohio.zip)|5,343,670|1550|
+| [Oklahoma](https://usbuildingdata.blob.core.windows.net/usbuildings/Oklahoma.zip)|2,056,402|624.71|
+| [Oregon](https://usbuildingdata.blob.core.windows.net/usbuildings/Oregon.zip)|1,781,820|544.30|
 
 
 

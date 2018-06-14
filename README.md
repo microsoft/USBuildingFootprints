@@ -69,7 +69,7 @@ On our evaluation set contains ~15k building. The metrics on the set are:
 | [Colorado](https://usbuildingdata.blob.core.windows.net/usbuildings/Colorado.zip)|2,043,866|617.68|
 | [Connecticut](https://usbuildingdata.blob.core.windows.net/usbuildings/Connecticut.zip)|1,156,638|350.88|
 | [Delaware](https://usbuildingdata.blob.core.windows.net/usbuildings/Delaware.zip)|331,654 |99.91|
-| [DistrictOfColumbia](https://usbuildingdata.blob.core.windows.net/usbuildings/DistrictofColumbia.zip)|58,330|18.00|
+| [District Of Columbia](https://usbuildingdata.blob.core.windows.net/usbuildings/DistrictofColumbia.zip)|58,330|18.00|
 | [Florida](https://usbuildingdata.blob.core.windows.net/usbuildings/Florida.zip)|6,532,545|1960|
 | [Georgia](https://usbuildingdata.blob.core.windows.net/usbuildings/Georgia.zip)|3,801,461|1100|
 | [Hawaii]()|252,894|75.79|
@@ -90,15 +90,18 @@ On our evaluation set contains ~15k building. The metrics on the set are:
 | [Montana](https://usbuildingdata.blob.core.windows.net/usbuildings/Montana.zip)|762,428|226.78|
 | [Nebraska](https://usbuildingdata.blob.core.windows.net/usbuildings/Nebraska.zip)|1,135,526|330.05|
 | [Nevada](https://usbuildingdata.blob.core.windows.net/usbuildings/Nebraska.zip)|847,575|261.59|
-| [NewHampshire](https://usbuildingdata.blob.core.windows.net/usbuildings/NewHampshire.zip)|558,850|169.91|
-| [NewJersey](https://usbuildingdata.blob.core.windows.net/usbuildings/NewJersey.zip)|2,370,475|701.58|
-| [NewMexico](https://usbuildingdata.blob.core.windows.net/usbuildings/NewMexico.zip)|985,820|304.70|
-| [NewYork](https://usbuildingdata.blob.core.windows.net/usbuildings/NewYork.zip)|4,788,312|1390|
-| [NorthCarolina](https://usbuildingdata.blob.core.windows.net/usbuildings/NorthCarolina.zip)|4,504,348|1290|
-| [NorthDakota](https://usbuildingdata.blob.core.windows.net/usbuildings/NorthDakota.zip)|557,809|165.65 |
+| [New Hampshire](https://usbuildingdata.blob.core.windows.net/usbuildings/NewHampshire.zip)|558,850|169.91|
+| [New Jersey](https://usbuildingdata.blob.core.windows.net/usbuildings/NewJersey.zip)|2,370,475|701.58|
+| [New Mexico](https://usbuildingdata.blob.core.windows.net/usbuildings/NewMexico.zip)|985,820|304.70|
+| [New York](https://usbuildingdata.blob.core.windows.net/usbuildings/NewYork.zip)|4,788,312|1390|
+| [North Carolina](https://usbuildingdata.blob.core.windows.net/usbuildings/NorthCarolina.zip)|4,504,348|1290|
+| [North Dakota](https://usbuildingdata.blob.core.windows.net/usbuildings/NorthDakota.zip)|557,809|165.65 |
 | [Ohio](https://usbuildingdata.blob.core.windows.net/usbuildings/Ohio.zip)|5,343,670|1550|
 | [Oklahoma](https://usbuildingdata.blob.core.windows.net/usbuildings/Oklahoma.zip)|2,056,402|624.71|
 | [Oregon](https://usbuildingdata.blob.core.windows.net/usbuildings/Oregon.zip)|1,781,820|544.30|
+| [Pennsylvania](https://usbuildingdata.blob.core.windows.net/usbuildings/Pennsylvania.zip)|4,801,561|1390|
+| [Rhode Island](https://usbuildingdata.blob.core.windows.net/usbuildings/RhodeIsland.zip)|348,566|103.63|
+| [South Carolina](https://usbuildingdata.blob.core.windows.net/usbuildings/SouthCarolina.zip)|2,134,688|629.38 |
 
 
 

@@ -4,7 +4,7 @@ This dataset contains 124,885,597 million computer generated building footprints
 
 License
 -------------------
-These data are licensed by Microsoft under the Open Data Commons Open Database License (ODbL) 
+These data are licensed by Microsoft under the [Open Data Commons Open Database License (ODbL)](https://opendatacommons.org/licenses/odbl/) 
 
 ## FAQ
 #### What the data include:
@@ -86,7 +86,7 @@ Maybe. Never blindly import data in to OSM without first checking the local qual
 | [District Of Columbia](https://usbuildingdata.blob.core.windows.net/usbuildings/DistrictofColumbia.zip)|58,330|18.00|
 | [Florida](https://usbuildingdata.blob.core.windows.net/usbuildings/Florida.zip)|6,532,545|1960|
 | [Georgia](https://usbuildingdata.blob.core.windows.net/usbuildings/Georgia.zip)|3,801,461|1100|
-| [Hawaii]()|252,894|75.79|
+| [Hawaii](https://usbuildingdata.blob.core.windows.net/usbuildings/Hawaii.zip)|252,894|75.79|
 | [Idaho](https://usbuildingdata.blob.core.windows.net/usbuildings/Idaho.zip)|883,618|268.31|
 | [Illinois](https://usbuildingdata.blob.core.windows.net/usbuildings/Illinois.zip)|4,783,021|1380|
 | [Indiana](https://usbuildingdata.blob.core.windows.net/usbuildings/Indiana.zip)|3,224,996|961.83|
@@ -124,6 +124,8 @@ Maybe. Never blindly import data in to OSM without first checking the local qual
 | [Virginia](https://usbuildingdata.blob.core.windows.net/usbuildings/Virginia.zip)|3,020,994|880.71|
 | [Washington](https://usbuildingdata.blob.core.windows.net/usbuildings/Washington.zip)|2,910,981|888.41|
 | [West Virginia](https://usbuildingdata.blob.core.windows.net/usbuildings/WestVirginia.zip)|1,020,048|295.15|
+| [Wisconson](https://usbuildingdata.blob.core.windows.net/usbuildings/Wisconson.zip)|3,010,755|897.09|
+| [Wyoming](https://usbuildingdata.blob.core.windows.net/usbuildings/Wyoming.zip)|376,912|111.03|
 
 
 

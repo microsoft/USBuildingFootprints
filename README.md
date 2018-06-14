@@ -13,7 +13,7 @@ Approximately 125 million building footprint polygon geometry in all 50 US State
 The building extraction is done in two stages:
 1.	Semantic Segmentation – Recognizing building pixels on the aerial image using DNNs
 2.	Polygonization – Converting building pixel blobs into polygons
-#### Semantic Segmentation
+### Semantic Segmentation
 ![](/images/segmentation.PNG)
 
 
@@ -31,7 +31,7 @@ These are the intermediate stage metrics we use to track DNN model improvements 
 The pixel error on the evaluation set is 1.15%.
 Pixel recall/precision = 94.5%/94.5%
 
-#### Polygonization
+### Polygonization
 ![](/images/polygonization.PNG)
 
 Method description
@@ -41,7 +41,7 @@ We developed a method that approximates the prediction pixels into polygons maki
 3. Consecutive angles cannot be very sharp, smaller by some auto-tuned threshold, e.g. 30 degrees
 4. Building angles likely have very few dominant angles, meaning all building edges are forming angle of (dominant angle +- n*pi/2)
 
-In near future, we will be looking to deduce this automatically from the vast existing building information.
+In near future, we will be looking to deduce this automatically from existing building information.
 
 #### Metrics
 Building matching metrics:

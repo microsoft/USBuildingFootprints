@@ -65,6 +65,12 @@ The vintage of the footprints depends on the vintage of the underlying imagery. 
 #### How good is the data?:
 Our metrics show that in the vast majority of cases the quality is at least as good as data hand digitized buildings in OpenStreetMap. It is not perfect, particularly in dense urban areas but it is still awesome.
 
+#### What can I use the data for?
+Anything you want. Scientific research, urban planning, game deveopment, visualization, etc. 
+
+#### Will there be more data coming for other geographies?
+Maybe 
+
 #### Why are the data being released?
 Microsoft has a continued interest in supporting a thriving OpenStreetMap ecosystem. 
 

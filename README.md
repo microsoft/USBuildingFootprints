@@ -34,7 +34,7 @@ Pixel recall/precision = 94.5%/94.5%
 ### Polygonization
 ![](/images/polygonization.PNG)
 
-Method description
+#### Method description
 We developed a method that approximates the prediction pixels into polygons making decisions based on the whole prediction feature space. This is very different from standard approaches, e.g. Douglas-Pecker algorithm, which are greedy in nature. The method tries to impose some of a priory building properties, which are, at the moment, manually defined and automatically tuned. Some of these a priory properties are:
 1. The building edge must be of at least some length, both relative and absolute, e.g. 3m
 2. Consecutive edge angles are likely to be 90 degrees

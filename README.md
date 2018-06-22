@@ -60,7 +60,7 @@ On our evaluation set contains ~15k building. The metrics on the set are:
 2. The metrics are better or similar compared to OSM building metrics against the labels
 
 #### Data Vintage:
-The vintage of the footprints depends on the vintage of the underlying imagery. Because Bing Imagery is a composite of mutliple sources it is difficult to know the exact dates.
+The vintage of the footprints depends on the vintage of the underlying imagery. Because Bing Imagery is a composite of mutliple sources it is difficult to know the exact dates for individual pieces of data.
 
 #### How good is the data?:
 Our metrics show that in the vast majority of cases the quality is at least as good as data hand digitized buildings in OpenStreetMap. It is not perfect, particularly in dense urban areas but it is still awesome.
@@ -69,13 +69,13 @@ Our metrics show that in the vast majority of cases the quality is at least as g
 Yes. We are working through the internal prcoess to open source the segmentation and polyonization algorithms. 
 
 #### Will there be more data coming for other geographies?
-Maybe 
+Maybe. 
 
 #### Why are the data being released?
 Microsoft has a continued interest in supporting a thriving OpenStreetMap ecosystem. 
 
 #### Should we import the data in to OpenStreetMap?
-Maybe. Never blindly import data in to OSM without first checking the local quality. While the metrics show that this data meets or exeeds the quality of hand drawn building footprints, the data does vary in quality from place to place, between rural and urban and so on. Inspect quality locally and discuss an import plan with the local community. Always follow the [OSM import community guidelines](https://wiki.openstreetmap.org/wiki/Import/Guidelines). 
+Maybe. Never blindly import data in to OSM without first checking the local quality. While the metrics show that this data meets or exeeds the quality of hand drawn building footprints, the data does vary in quality from place to place, between rural and urban, mountains and plains, and so on. Inspect quality locally and discuss an import plan with the community. Always follow the [OSM import community guidelines](https://wiki.openstreetmap.org/wiki/Import/Guidelines). 
 
 
 

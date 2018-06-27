@@ -69,7 +69,7 @@ Our metrics show that in the vast majority of cases the quality is at least as g
 Yes. We are working through the internal prcoess to open source the segmentation and polyonization algorithms. 
 
 #### Will there be more data coming for other geographies?
-Maybe. 
+Maybe. This is a work in progess.
 
 #### Why are the data being released?
 Microsoft has a continued interest in supporting a thriving OpenStreetMap ecosystem. 

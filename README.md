@@ -39,7 +39,7 @@ We developed a method that approximates the prediction pixels into polygons maki
 1. The building edge must be of at least some length, both relative and absolute, e.g. 3 meters
 2. Consecutive edge angles are likely to be 90 degrees
 3. Consecutive angles cannot be very sharp, smaller by some auto-tuned threshold, e.g. 30 degrees
-4. Building angles likely have very few dominant angles, meaning all building edges are forming angle of (dominant angle +- n*pi/2)
+4. Building angles likely have very few dominant angles, meaning all building edges are forming angle of (dominant angle +- n*_&pi;_/2)
 
 In near future, we will be looking to deduce this automatically from existing building information.
 

@@ -45,6 +45,7 @@ In near future, we will be looking to deduce this automatically from existing bu
 
 #### Metrics
 Building matching metrics:
+
 | Metric | Value |
 | --- | :---: |
 | Precision | 99.3% |
@@ -68,7 +69,7 @@ The vintage of the footprints depends on the vintage of the underlying imagery. 
 Our metrics show that in the vast majority of cases the quality is at least as good as data hand digitized buildings in OpenStreetMap. It is not perfect, particularly in dense urban areas but it is still awesome.
 
 #### Will Microsoft be open sourcing the models?
-Yes. We are working through the internal prcoess to open source the segmentation models and polyonization algorithms. 
+Yes. We are working through the internal process to open source the segmentation models and polyonization algorithms. 
 
 #### Will there be more data coming for other geographies?
 Maybe. This is a work in progess.

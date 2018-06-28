@@ -8,7 +8,7 @@ These data are licensed by Microsoft under the [Open Data Commons Open Database 
 
 ## FAQ
 #### What the data include:
-Approximately 125 million building footprint polygon geometry in all 50 US States in GeoJSON format. 
+Approximately 125 million building footprint polygon geometries in all 50 US States in GeoJSON format. 
 #### Creation Details:
 The building extraction is done in two stages:
 1.	Semantic Segmentation – Recognizing building pixels on the aerial image using DNNs
@@ -17,7 +17,7 @@ The building extraction is done in two stages:
 ![](/images/segmentation.PNG)
 
 
-DNN architecture
+#### DNN architecture
 The network foundation is ResNet34 which can be found [here](https://github.com/Microsoft/CNTK/blob/master/PretrainedModels/Image.md#resnet). In order to produce pixel prediction output, we have appended RefineNet upsampling layers described in this [paper](https://arxiv.org/abs/1611.06612).
 The model is fully-convolutional, meaning that the model can be applied on an image of any size (constrained by GPU memory, 4096x4096 in our case). 
 

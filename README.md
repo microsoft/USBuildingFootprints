@@ -63,7 +63,7 @@ On our evaluation set contains ~15k building. The metrics on the set are:
 - The metrics are better or similar compared to OSM building metrics against the labels
 
 #### Data Vintage
-The vintage of the footprints depends on the vintage of the underlying imagery. Because Bing Imagery is a composite of mutliple sources it is difficult to know the exact dates for individual pieces of data.
+The vintage of the footprints depends on the vintage of the underlying imagery. Because Bing Imagery is a composite of multiple sources it is difficult to know the exact dates for individual pieces of data.
 
 #### How good is the data?
 Our metrics show that in the vast majority of cases the quality is at least as good as data hand digitized buildings in OpenStreetMap. It is not perfect, particularly in dense urban areas but it is still awesome.
@@ -82,7 +82,7 @@ Maybe. Never overwrite the hard work of other contributors or blindly import dat
 
 
 
-| State         | Number of Buildings  | Unziped MB  |
+| State         | Number of Buildings  | Unzipped MB |
 | ------------- |:-------------:| -----:|
 | [Alabama](https://usbuildingdata.blob.core.windows.net/usbuildings/Alabama.zip)       |2,392,171 | 711.76 |
 | [Alaska](https://usbuildingdata.blob.core.windows.net/usbuildings/Alaska.zip)      | 232,159      |   123.06 |

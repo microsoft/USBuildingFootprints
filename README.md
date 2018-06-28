@@ -36,7 +36,7 @@ Pixel recall/precision = 94.5%/94.5%
 
 #### Method description
 We developed a method that approximates the prediction pixels into polygons making decisions based on the whole prediction feature space. This is very different from standard approaches, e.g. Douglas-Pecker algorithm, which are greedy in nature. The method tries to impose some of a priory building properties, which are, at the moment, manually defined and automatically tuned. Some of these a priory properties are:
-1. The building edge must be of at least some length, both relative and absolute, e.g. 3m
+1. The building edge must be of at least some length, both relative and absolute, e.g. 3 meters
 2. Consecutive edge angles are likely to be 90 degrees
 3. Consecutive angles cannot be very sharp, smaller by some auto-tuned threshold, e.g. 30 degrees
 4. Building angles likely have very few dominant angles, meaning all building edges are forming angle of (dominant angle +- n*pi/2)
@@ -45,8 +45,11 @@ In near future, we will be looking to deduce this automatically from existing bu
 
 #### Metrics
 Building matching metrics:
-1. Precision = 99.3%
-2. Recall = 93.5%
+
+| Metric | Value |
+| --- | :---: |
+| Precision | 99.3% |
+| Recall | 93.5% |
 
 We track various metrics to measure the quality of the output:
 1. Intersection over Union – This is the standard metric measuring the overlap quality against the labels
@@ -56,20 +59,20 @@ We track various metrics to measure the quality of the output:
 ![](/images/bldgmetrics.JPG)
 
 On our evaluation set contains ~15k building. The metrics on the set are:
-1. IoU is 0.85, Shape distance is 0.33, Average rotation error is 1.6 degrees
-2. The metrics are better or similar compared to OSM building metrics against the labels
+- IoU is 0.85, Shape distance is 0.33, Average rotation error is 1.6 degrees
+- The metrics are better or similar compared to OSM building metrics against the labels
 
-#### Data Vintage:
+#### Data Vintage
 The vintage of the footprints depends on the vintage of the underlying imagery. Because Bing Imagery is a composite of mutliple sources it is difficult to know the exact dates for individual pieces of data.
 
-#### How good is the data?:
+#### How good is the data?
 Our metrics show that in the vast majority of cases the quality is at least as good as data hand digitized buildings in OpenStreetMap. It is not perfect, particularly in dense urban areas but it is still awesome.
 
 #### Will Microsoft be open sourcing the models?
-Yes. We are working through the internal prcoess to open source the segmentation models and polyonization algorithms. 
+Yes. We are working through the internal process to open source the segmentation models and polyonization algorithms. 
 
 #### Will there be more data coming for other geographies?
-Maybe. This is a work in progess.
+Maybe. This is a work in progress.
 
 #### Why are the data being released?
 Microsoft has a continued interest in supporting a thriving OpenStreetMap ecosystem. 

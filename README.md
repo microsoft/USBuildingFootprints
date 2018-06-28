@@ -1,14 +1,14 @@
-Introduction 
+Introduction
 -------------------
-This dataset contains 124,885,597 million computer generated building footprints in all 50 US states. This data are freely available for download and use.  
+This dataset contains 124,885,597 million computer generated building footprints in all 50 US states. This data is freely available for download and use.
 
 License
 -------------------
-These data are licensed by Microsoft under the [Open Data Commons Open Database License (ODbL)](https://opendatacommons.org/licenses/odbl/) 
+This data is licensed by Microsoft under the [Open Data Commons Open Database License (ODbL)](https://opendatacommons.org/licenses/odbl/)
 
 ## FAQ
 #### What the data include:
-Approximately 125 million building footprint polygon geometries in all 50 US States in GeoJSON format. 
+Approximately 125 million building footprint polygon geometries in all 50 US States in GeoJSON format.
 #### Creation Details:
 The building extraction is done in two stages:
 1.	Semantic Segmentation – Recognizing building pixels on the aerial image using DNNs
@@ -19,7 +19,7 @@ The building extraction is done in two stages:
 
 #### DNN architecture
 The network foundation is ResNet34 which can be found [here](https://github.com/Microsoft/CNTK/blob/master/PretrainedModels/Image.md#resnet). In order to produce pixel prediction output, we have appended RefineNet upsampling layers described in this [paper](https://arxiv.org/abs/1611.06612).
-The model is fully-convolutional, meaning that the model can be applied on an image of any size (constrained by GPU memory, 4096x4096 in our case). 
+The model is fully-convolutional, meaning that the model can be applied on an image of any size (constrained by GPU memory, 4096x4096 in our case).
 
 #### Training details
 The training set consists of 5 million labeled images. Majority of the satellite images cover diverse residential areas in US. For the sake of good set representation, we have enriched the set with samples from various areas covering mountains, glaciers, forests, deserts, beaches, coasts, etc.
@@ -69,16 +69,16 @@ The vintage of the footprints depends on the vintage of the underlying imagery. 
 Our metrics show that in the vast majority of cases the quality is at least as good as data hand digitized buildings in OpenStreetMap. It is not perfect, particularly in dense urban areas but it is still awesome.
 
 #### Will Microsoft be open sourcing the models?
-Yes. We are working through the internal process to open source the segmentation models and polyonization algorithms. 
+Yes. We are working through the internal process to open source the segmentation models and polyonization algorithms.
 
 #### Will there be more data coming for other geographies?
 Maybe. This is a work in progress.
 
 #### Why are the data being released?
-Microsoft has a continued interest in supporting a thriving OpenStreetMap ecosystem. 
+Microsoft has a continued interest in supporting a thriving OpenStreetMap ecosystem.
 
 #### Should we import the data in to OpenStreetMap?
-Maybe. Never overwrite the hard work of other contributors or blindly import data in to OSM without first checking the local quality. While our metrics show that this data meets or exeeds the quality of hand drawn building footprints, the data does vary in quality from place to place, between rural and urban, mountains and plains, and so on. Inspect quality locally and discuss an import plan with the community. Always follow the [OSM import community guidelines](https://wiki.openstreetmap.org/wiki/Import/Guidelines). 
+Maybe. Never overwrite the hard work of other contributors or blindly import data in to OSM without first checking the local quality. While our metrics show that this data meets or exeeds the quality of hand drawn building footprints, the data does vary in quality from place to place, between rural and urban, mountains and plains, and so on. Inspect quality locally and discuss an import plan with the community. Always follow the [OSM import community guidelines](https://wiki.openstreetmap.org/wiki/Import/Guidelines).
 
 
 
@@ -106,7 +106,7 @@ Maybe. Never overwrite the hard work of other contributors or blindly import dat
 | [Maine](https://usbuildingdata.blob.core.windows.net/usbuildings/Maine.zip)|736,346|218.32|
 | [Maryland](https://usbuildingdata.blob.core.windows.net/usbuildings/Maryland.zip)|1,590,655|467.61|
 | [Massachusetts](https://usbuildingdata.blob.core.windows.net/usbuildings/Massachusetts.zip)|1,982,583|596.01|
-| [Michigan](https://usbuildingdata.blob.core.windows.net/usbuildings/Michigan.zip)|4,854,138|1410| 
+| [Michigan](https://usbuildingdata.blob.core.windows.net/usbuildings/Michigan.zip)|4,854,138|1410|
 | [Minnesota](https://usbuildingdata.blob.core.windows.net/usbuildings/Minnesota.zip)|2,792,296|838.22|
 | [Mississippi](https://usbuildingdata.blob.core.windows.net/usbuildings/Mississippi.zip)| 1,470,285|438.99|
 | [Missouri](https://usbuildingdata.blob.core.windows.net/usbuildings/Missouri.zip)|3,096,410|904.84|

@@ -133,7 +133,7 @@ Maybe. Never overwrite the hard work of other contributors or blindly import dat
 | [Virginia](https://usbuildingdata.blob.core.windows.net/usbuildings/Virginia.zip)|3,020,994|880.71|
 | [Washington](https://usbuildingdata.blob.core.windows.net/usbuildings/Washington.zip)|2,910,981|888.41|
 | [West Virginia](https://usbuildingdata.blob.core.windows.net/usbuildings/WestVirginia.zip)|1,020,048|295.15|
-| [Wisconson](https://usbuildingdata.blob.core.windows.net/usbuildings/Wisconson.zip)|3,010,755|897.09|
+| [Wisconsin](https://usbuildingdata.blob.core.windows.net/usbuildings/Wisconsin.zip)|3,010,755|897.09|
 | [Wyoming](https://usbuildingdata.blob.core.windows.net/usbuildings/Wyoming.zip)|376,912|111.03|
 
 

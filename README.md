@@ -49,7 +49,6 @@ Building matching metrics:
 | --- | :---: |
 | Precision | 99.3% |
 | Recall | 93.5% |
-<br>
 
 We track various metrics to measure the quality of the output:
 1. Intersection over Union – This is the standard metric measuring the overlap quality against the labels
@@ -62,10 +61,10 @@ On our evaluation set contains ~15k building. The metrics on the set are:
 - IoU is 0.85, Shape distance is 0.33, Average rotation error is 1.6 degrees
 - The metrics are better or similar compared to OSM building metrics against the labels
 
-#### Data Vintage:
+#### Data Vintage
 The vintage of the footprints depends on the vintage of the underlying imagery. Because Bing Imagery is a composite of mutliple sources it is difficult to know the exact dates for individual pieces of data.
 
-#### How good is the data?:
+#### How good is the data?
 Our metrics show that in the vast majority of cases the quality is at least as good as data hand digitized buildings in OpenStreetMap. It is not perfect, particularly in dense urban areas but it is still awesome.
 
 #### Will Microsoft be open sourcing the models?

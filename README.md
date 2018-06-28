@@ -66,7 +66,7 @@ The vintage of the footprints depends on the vintage of the underlying imagery. 
 Our metrics show that in the vast majority of cases the quality is at least as good as data hand digitized buildings in OpenStreetMap. It is not perfect, particularly in dense urban areas but it is still awesome.
 
 #### Will Microsoft be open sourcing the models?
-Yes. We are working through the internal prcoess to open source the segmentation and polyonization algorithms. 
+Yes. We are working through the internal prcoess to open source the segmentation models and polyonization algorithms. 
 
 #### Will there be more data coming for other geographies?
 Maybe. This is a work in progess.
@@ -75,7 +75,7 @@ Maybe. This is a work in progess.
 Microsoft has a continued interest in supporting a thriving OpenStreetMap ecosystem. 
 
 #### Should we import the data in to OpenStreetMap?
-Maybe. Never blindly import data in to OSM without first checking the local quality. While the metrics show that this data meets or exeeds the quality of hand drawn building footprints, the data does vary in quality from place to place, between rural and urban, mountains and plains, and so on. Inspect quality locally and discuss an import plan with the community. Always follow the [OSM import community guidelines](https://wiki.openstreetmap.org/wiki/Import/Guidelines). 
+Maybe. Never overwrite the hard work of other contributors or blindly import data in to OSM without first checking the local quality. While our metrics show that this data meets or exeeds the quality of hand drawn building footprints, the data does vary in quality from place to place, between rural and urban, mountains and plains, and so on. Inspect quality locally and discuss an import plan with the community. Always follow the [OSM import community guidelines](https://wiki.openstreetmap.org/wiki/Import/Guidelines). 
 
 
 

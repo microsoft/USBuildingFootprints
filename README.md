@@ -113,7 +113,7 @@ Maybe. Never overwrite the hard work of other contributors or blindly import dat
 | [Montana](https://usbuildingdata.blob.core.windows.net/usbuildings/Montana.zip)|762,428|226.78|
 | [Nebraska](https://usbuildingdata.blob.core.windows.net/usbuildings/Nebraska.zip)|1,135,526|330.05|
 | [Nevada](https://usbuildingdata.blob.core.windows.net/usbuildings/Nevada.zip)|847,575|261.59|
-| [New Hamshire](https://usbuildingdata.blob.core.windows.net/usbuildings/NewHampshire.zip)|558,850|169.91|
+| [New Hampshire](https://usbuildingdata.blob.core.windows.net/usbuildings/NewHampshire.zip)|558,850|169.91|
 | [New Jersey](https://usbuildingdata.blob.core.windows.net/usbuildings/NewJersey.zip)|2,370,475|701.58|
 | [New Mexico](https://usbuildingdata.blob.core.windows.net/usbuildings/NewMexico.zip)|985,820|304.70|
 | [New York](https://usbuildingdata.blob.core.windows.net/usbuildings/NewYork.zip)|4,788,312|1390|

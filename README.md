@@ -65,8 +65,11 @@ On our evaluation set contains ~15k building. The metrics on the set are:
 #### Data Vintage
 The vintage of the footprints depends on the vintage of the underlying imagery. Because Bing Imagery is a composite of multiple sources it is difficult to know the exact dates for individual pieces of data.
 
-#### How good is the data?
+#### How good are the data?
 Our metrics show that in the vast majority of cases the quality is at least as good as data hand digitized buildings in OpenStreetMap. It is not perfect, particularly in dense urban areas but it is still awesome.
+
+### What is the coordinate reference system?
+EPSG: 4326
 
 #### Will Microsoft be open sourcing the models?
 Yes. We are working through the internal process to open source the segmentation models and polyonization algorithms.

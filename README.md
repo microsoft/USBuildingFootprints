@@ -1,6 +1,6 @@
 Introduction
 -------------------
-This dataset contains 124,885,597 computer generated building footprints in all 50 US states. This data is freely available for download and use.
+This dataset contains 125,192,184 computer generated building footprints in all 50 US states. This data is freely available for download and use.
 
 License
 -------------------
@@ -72,7 +72,7 @@ Our metrics show that in the vast majority of cases the quality is at least as g
 EPSG: 4326
 
 #### Will Microsoft be open sourcing the models?
-Yes. We are working through the internal process to open source the segmentation models and polyonization algorithms.
+Yes. We are working through the internal process to open source the segmentation models and polygonization algorithms.
 
 #### Will there be more data coming for other geographies?
 Maybe. This is a work in progress.
@@ -81,63 +81,63 @@ Maybe. This is a work in progress.
 Microsoft has a continued interest in supporting a thriving OpenStreetMap ecosystem.
 
 #### Should we import the data in to OpenStreetMap?
-Maybe. Never overwrite the hard work of other contributors or blindly import data in to OSM without first checking the local quality. While our metrics show that this data meets or exeeds the quality of hand drawn building footprints, the data does vary in quality from place to place, between rural and urban, mountains and plains, and so on. Inspect quality locally and discuss an import plan with the community. Always follow the [OSM import community guidelines](https://wiki.openstreetmap.org/wiki/Import/Guidelines).
+Maybe. Never overwrite the hard work of other contributors or blindly import data in to OSM without first checking the local quality. While our metrics show that this data meets or exceeds the quality of hand drawn building footprints, the data does vary in quality from place to place, between rural and urban, mountains and plains, and so on. Inspect quality locally and discuss an import plan with the community. Always follow the [OSM import community guidelines](https://wiki.openstreetmap.org/wiki/Import/Guidelines).
 
 
 
 | State         | Number of Buildings  | Unzipped MB |
 | ------------- |:-------------:| -----:|
-| [Alabama](https://usbuildingdata.blob.core.windows.net/usbuildings/Alabama.zip)       |2,392,171 | 711.76 |
-| [Alaska](https://usbuildingdata.blob.core.windows.net/usbuildings/Alaska.zip)      | 232,159      |   123.06 |
-| [Arizona](https://usbuildingdata.blob.core.windows.net/usbuildings/Arizona.zip) | 2,492,999    |    773.50 |
-| [Arkansas](https://usbuildingdata.blob.core.windows.net/usbuildings/Arkansas.zip)|1,499,025|443.99|
-| [California](https://usbuildingdata.blob.core.windows.net/usbuildings/California.zip)|10,556,550|3,240|
-| [Colorado](https://usbuildingdata.blob.core.windows.net/usbuildings/Colorado.zip)|2,043,866|617.68|
-| [Connecticut](https://usbuildingdata.blob.core.windows.net/usbuildings/Connecticut.zip)|1,156,638|350.88|
-| [Delaware](https://usbuildingdata.blob.core.windows.net/usbuildings/Delaware.zip)|331,654 |99.91|
-| [District Of Columbia](https://usbuildingdata.blob.core.windows.net/usbuildings/DistrictofColumbia.zip)|58,330|18.00|
-| [Florida](https://usbuildingdata.blob.core.windows.net/usbuildings/Florida.zip)|6,532,545|1960|
-| [Georgia](https://usbuildingdata.blob.core.windows.net/usbuildings/Georgia.zip)|3,801,461|1100|
-| [Hawaii](https://usbuildingdata.blob.core.windows.net/usbuildings/Hawaii.zip)|252,894|75.79|
-| [Idaho](https://usbuildingdata.blob.core.windows.net/usbuildings/Idaho.zip)|883,618|268.31|
-| [Illinois](https://usbuildingdata.blob.core.windows.net/usbuildings/Illinois.zip)|4,783,021|1380|
-| [Indiana](https://usbuildingdata.blob.core.windows.net/usbuildings/Indiana.zip)|3,224,996|961.83|
-| [Iowa](https://usbuildingdata.blob.core.windows.net/usbuildings/Iowa.zip)|2,013,085|584.85|
-| [Kansas](https://usbuildingdata.blob.core.windows.net/usbuildings/Kansas.zip)|1,564,845|460.28|
-| [Kentucky](https://usbuildingdata.blob.core.windows.net/usbuildings/Kentucky.zip)|2,363,324| 685.64 |
-| [Louisiana](https://usbuildingdata.blob.core.windows.net/usbuildings/Louisiana.zip)|2,005,341|608.33|
-| [Maine](https://usbuildingdata.blob.core.windows.net/usbuildings/Maine.zip)|736,346|218.32|
-| [Maryland](https://usbuildingdata.blob.core.windows.net/usbuildings/Maryland.zip)|1,590,655|467.61|
-| [Massachusetts](https://usbuildingdata.blob.core.windows.net/usbuildings/Massachusetts.zip)|1,982,583|596.01|
-| [Michigan](https://usbuildingdata.blob.core.windows.net/usbuildings/Michigan.zip)|4,854,138|1410|
-| [Minnesota](https://usbuildingdata.blob.core.windows.net/usbuildings/Minnesota.zip)|2,792,296|838.22|
-| [Mississippi](https://usbuildingdata.blob.core.windows.net/usbuildings/Mississippi.zip)| 1,470,285|438.99|
-| [Missouri](https://usbuildingdata.blob.core.windows.net/usbuildings/Missouri.zip)|3,096,410|904.84|
-| [Montana](https://usbuildingdata.blob.core.windows.net/usbuildings/Montana.zip)|762,428|226.78|
-| [Nebraska](https://usbuildingdata.blob.core.windows.net/usbuildings/Nebraska.zip)|1,135,526|330.05|
-| [Nevada](https://usbuildingdata.blob.core.windows.net/usbuildings/Nevada.zip)|847,575|261.59|
-| [New Hampshire](https://usbuildingdata.blob.core.windows.net/usbuildings/NewHampshire.zip)|558,850|169.91|
-| [New Jersey](https://usbuildingdata.blob.core.windows.net/usbuildings/NewJersey.zip)|2,370,475|701.58|
-| [New Mexico](https://usbuildingdata.blob.core.windows.net/usbuildings/NewMexico.zip)|985,820|304.70|
-| [New York](https://usbuildingdata.blob.core.windows.net/usbuildings/NewYork.zip)|4,788,312|1390|
-| [North Carolina](https://usbuildingdata.blob.core.windows.net/usbuildings/NorthCarolina.zip)|4,504,348|1290|
-| [North Dakota](https://usbuildingdata.blob.core.windows.net/usbuildings/NorthDakota.zip)|557,809|165.65 |
-| [Ohio](https://usbuildingdata.blob.core.windows.net/usbuildings/Ohio.zip)|5,343,670|1550|
-| [Oklahoma](https://usbuildingdata.blob.core.windows.net/usbuildings/Oklahoma.zip)|2,056,402|624.71|
-| [Oregon](https://usbuildingdata.blob.core.windows.net/usbuildings/Oregon.zip)|1,781,820|544.30|
-| [Pennsylvania](https://usbuildingdata.blob.core.windows.net/usbuildings/Pennsylvania.zip)|4,801,561|1390|
-| [Rhode Island](https://usbuildingdata.blob.core.windows.net/usbuildings/RhodeIsland.zip)|348,566|103.63|
-| [South Carolina](https://usbuildingdata.blob.core.windows.net/usbuildings/SouthCarolina.zip)|2,134,688|629.38 |
-| [South Dakota](https://usbuildingdata.blob.core.windows.net/usbuildings/SouthDakota.zip)|649,233|189.85|
-| [Tennessee](https://usbuildingdata.blob.core.windows.net/usbuildings/Tennessee.zip)|2,964,339|875.41|
-| [Texas](https://usbuildingdata.blob.core.windows.net/usbuildings/Texas.zip)|9,638,970|2830|
-| [Utah](https://usbuildingdata.blob.core.windows.net/usbuildings/Utah.zip)|980,745|298.24|
-| [Vermont](https://usbuildingdata.blob.core.windows.net/usbuildings/Vermont.zip)|346,038| 104.33|
-| [Virginia](https://usbuildingdata.blob.core.windows.net/usbuildings/Virginia.zip)|3,020,994|880.71|
-| [Washington](https://usbuildingdata.blob.core.windows.net/usbuildings/Washington.zip)|2,910,981|888.41|
-| [West Virginia](https://usbuildingdata.blob.core.windows.net/usbuildings/WestVirginia.zip)|1,020,048|295.15|
-| [Wisconsin](https://usbuildingdata.blob.core.windows.net/usbuildings/Wisconsin.zip)|3,010,755|897.09|
-| [Wyoming](https://usbuildingdata.blob.core.windows.net/usbuildings/Wyoming.zip)|376,912|111.03|
+| [Alabama](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/Alabama.zip)|2,460,404|526|
+| [Alaska](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/Alaska.zip)|110,746|26|
+| [Arizona](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/Arizona.zip)|2,555,395|584|
+| [Arkansas](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/Arkansas.zip)|1,508,657|321|
+| [California](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/California.zip)|10,988,525|2,537|
+| [Colorado](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/Colorado.zip)|2,080,808|466|
+| [Connecticut](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/Connecticut.zip)|1,190,229|258|
+| [Delaware](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/Delaware.zip)|345,907|75|
+| [District Of Columbia](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/DistrictofColumbia.zip)|58,329|13|
+| [Florida](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/Florida.zip)|6,903,772|1,521|
+| [Georgia](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/Georgia.zip)|3,873,560|825|
+| [Hawaii](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/Hawaii.zip)|252,891|56|
+| [Idaho](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/Idaho.zip)|883,594|198|
+| [Illinois](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/Illinois.zip)|4,855,794|1,033|
+| [Indiana](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/Indiana.zip)|3,268,325|700|
+| [Iowa](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/Iowa.zip)|2,035,688|427|
+| [Kansas](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/Kansas.zip)|1,596,495|339|
+| [Kentucky](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/Kentucky.zip)|2,384,214|500|
+| [Louisiana](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/Louisiana.zip)|2,057,368|448|
+| [Maine](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/Maine.zip)|752,054|160|
+| [Maryland](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/Maryland.zip)|1,622,849|344|
+| [Massachusetts](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/Massachusetts.zip)|2,033,018|438|
+| [Michigan](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/Michigan.zip)|4,900,472|1,045|
+| [Minnesota](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/Minnesota.zip)|2,815,784|606|
+| [Mississippi](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/Mississippi.zip)|1,495,864|321|
+| [Missouri](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/Missouri.zip)|3,141,265|662|
+| [Montana](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/Montana.zip)|762,288|168|
+| [Nebraska](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/Nebraska.zip)|1,158,081|245|
+| [Nevada](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/Nevada.zip)|932,025|212|
+| [New Hampshire](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/NewHampshire.zip)|563,487|122|
+| [New Jersey](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/NewJersey.zip)|2,480,332|528|
+| [New Mexico](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/NewMexico.zip)|1,011,373|231|
+| [New York](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/NewYork.zip)|4,844,438|1,035|
+| [North Carolina](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/NorthCarolina.zip)|4,561,262|963|
+| [North Dakota](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/NorthDakota.zip)|559,161|121|
+| [Ohio](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/Ohio.zip)|5,449,419|1,164|
+| [Oklahoma](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/Oklahoma.zip)|2,091,131|455|
+| [Oregon](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/Oregon.zip)|1,809,555|408|
+| [Pennsylvania](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/Pennsylvania.zip)|4,850,273|1,034|
+| [Rhode Island](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/RhodeIsland.zip)|366,779|78|
+| [South Carolina](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/SouthCarolina.zip)|2,180,513|463|
+| [South Dakota](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/SouthDakota.zip)|649,737|138|
+| [Tennessee](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/Tennessee.zip)|3,002,503|638|
+| [Texas](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/Texas.zip)|9,891,540|2,141|
+| [Utah](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/Utah.zip)|1,004,734|226|
+| [Vermont](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/Vermont.zip)|345,911|75|
+| [Virginia](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/Virginia.zip)|3,057,019|643|
+| [Washington](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/Washington.zip)|2,993,361|675|
+| [West Virginia](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/WestVirginia.zip)|1,020,031|213|
+| [Wisconsin](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/Wisconsin.zip)|3,054,452|654|
+| [Wyoming](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/Wyoming.zip)|380,772|83|
 
 
 

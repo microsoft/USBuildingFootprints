@@ -35,7 +35,7 @@ Pixel recall/precision = 94.5%/94.5%
 ![](/images/polygonization.PNG)
 
 #### Method description
-We developed a method that approximates the prediction pixels into polygons making decisions based on the whole prediction feature space. This is very different from standard approaches, e.g. Douglas-Peucker algorithm, which are greedy in nature. The method tries to impose some of a priory building properties, which are, at the moment, manually defined and automatically tuned. Some of these a priori properties are:
+We developed a method that approximates the prediction pixels into polygons making decisions based on the whole prediction feature space. This is very different from standard approaches, e.g. Douglas-Peucker algorithm, which are greedy in nature. The method tries to impose some of a priori building properties, which are, at the moment, manually defined and automatically tuned. Some of these a priori properties are:
 1. The building edge must be of at least some length, both relative and absolute, e.g. 3 meters
 2. Consecutive edge angles are likely to be 90 degrees
 3. Consecutive angles cannot be very sharp, smaller by some auto-tuned threshold, e.g. 30 degrees

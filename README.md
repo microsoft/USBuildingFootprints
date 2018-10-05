@@ -35,11 +35,11 @@ Pixel recall/precision = 94.5%/94.5%
 ![](/images/polygonization.PNG)
 
 #### Method description
-We developed a method that approximates the prediction pixels into polygons making decisions based on the whole prediction feature space. This is very different from standard approaches, e.g. Douglas-Peucker algorithm, which are greedy in nature. The method tries to impose some of a priori building properties, which are, at the moment, manually defined and automatically tuned. Some of these a priori properties are:
+We developed a method that approximates the prediction pixels into polygons making decisions based on the whole prediction feature space. This is very different from standard approaches, e.g. Douglas-Peucker algorithm, which are greedy in nature. The method tries to impose some of a priori building properties, which is, at the moment, manually defined and automatically tuned. Some of these a priori properties are:
 1. The building edge must be of at least some length, both relative and absolute, e.g. 3 meters
 2. Consecutive edge angles are likely to be 90 degrees
 3. Consecutive angles cannot be very sharp, smaller by some auto-tuned threshold, e.g. 30 degrees
-4. Building angles likely have very few dominant angles, meaning all building edges are forming angle of (dominant angle _&pm;_ n&pi;/2)
+4. Building angles likely have very few dominant angles, meaning all building edges are forming an angle of (dominant angle _&pm;_ n&pi;/2)
 
 In near future, we will be looking to deduce this automatically from existing building information.
 
@@ -77,11 +77,11 @@ Yes. We are working through the internal process to open source the segmentation
 #### Will there be more data coming for other geographies?
 Maybe. This is a work in progress.
 
-#### Why are the data being released?
+#### Why is the data being released?
 Microsoft has a continued interest in supporting a thriving OpenStreetMap ecosystem.
 
-#### Should we import the data in to OpenStreetMap?
-Maybe. Never overwrite the hard work of other contributors or blindly import data in to OSM without first checking the local quality. While our metrics show that this data meets or exceeds the quality of hand drawn building footprints, the data does vary in quality from place to place, between rural and urban, mountains and plains, and so on. Inspect quality locally and discuss an import plan with the community. Always follow the [OSM import community guidelines](https://wiki.openstreetmap.org/wiki/Import/Guidelines).
+#### Should we import the data into OpenStreetMap?
+Maybe. Never overwrite the hard work of other contributors or blindly import data into OSM without first checking the local quality. While our metrics show that this data meets or exceeds the quality of hand drawn building footprints, the data does vary in quality from place to place, between rural and urban, mountains and plains, and so on. Inspect quality locally and discuss an import plan with the community. Always follow the [OSM import community guidelines](https://wiki.openstreetmap.org/wiki/Import/Guidelines).
 
 
 

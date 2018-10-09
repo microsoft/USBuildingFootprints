@@ -8,7 +8,12 @@ This data is licensed by Microsoft under the [Open Data Commons Open Database Li
 
 ## FAQ
 #### What the data include:
-Approximately 125 million building footprint polygon geometries in all 50 US States in GeoJSON format.
+125,192,184 building footprint polygon geometries in all 50 US States in GeoJSON format.
+
+#### What is the GeoJson format?
+GeoJSON is a format for encoding a variety of geographic data structures. 
+For Intensive Documentation and Tutorials, Refer to [GeoJson Blog](http://geojson.org/)
+
 #### Creation Details:
 The building extraction is done in two stages:
 1.	Semantic Segmentation – Recognizing building pixels on the aerial image using DNNs

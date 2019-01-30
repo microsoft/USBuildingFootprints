@@ -19,7 +19,7 @@ The building extraction is done in two stages:
 1.	Semantic Segmentation – Recognizing building pixels on the aerial image using DNNs
 2.	Polygonization – Converting building pixel blobs into polygons
 ### Semantic Segmentation
-![](/images/segmentation.PNG)
+![](/images/segmentation.png)
 
 
 #### DNN architecture

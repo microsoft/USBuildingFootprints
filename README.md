@@ -24,10 +24,10 @@ The building extraction is done in two stages:
 
 #### DNN architecture
 The network foundation is ResNet34 which can be found [here](https://github.com/Microsoft/CNTK/blob/master/PretrainedModels/Image.md#resnet). In order to produce pixel prediction output, we have appended RefineNet upsampling layers described in this [paper](https://arxiv.org/abs/1611.06612).
-The model is fully-convolutional, meaning that the model can be applied on an image of any size (constrained by GPU memory, 4096x4096 in our case).
+The model is fully-convolutional, meaning that the model can be applied to an image of any size (constrained by GPU memory, 4096x4096 in our case).
 
 #### Training details
-The training set consists of 5 million labeled images. Majority of the satellite images cover diverse residential areas in US. For the sake of good set representation, we have enriched the set with samples from various areas covering mountains, glaciers, forests, deserts, beaches, coasts, etc.
+The training set consists of 5 million labeled images. Majority of the satellite images cover diverse residential areas in the US. For the sake of good set representation, we have enriched the set with samples from various areas covering mountains, glaciers, forests, deserts, beaches, coasts, etc.
 Images in the set are of 256x256 pixel size with 1 ft/pixel resolution.
 The training is done with CNTK toolkit using 32 GPUs.
 
@@ -40,7 +40,7 @@ Pixel recall/precision = 94.5%/94.5%
 ![](/images/polygonization.PNG)
 
 #### Method description
-We developed a method that approximates the prediction pixels into polygons making decisions based on the whole prediction feature space. This is very different from standard approaches, e.g. Douglas-Peucker algorithm, which are greedy in nature. The method tries to impose some of a priori building properties, which is, at the moment, manually defined and automatically tuned. Some of these a priori properties are:
+We developed a method that approximates the prediction pixels into polygons making decisions based on the whole prediction feature space. This is very different from standard approaches, e.g. the Douglas-Peucker algorithm, which are greedy in nature. The method tries to impose some of a priori building properties, which is, at the moment, manually defined and automatically tuned. Some of these a priori properties are:
 1. The building edge must be of at least some length, both relative and absolute, e.g. 3 meters
 2. Consecutive edge angles are likely to be 90 degrees
 3. Consecutive angles cannot be very sharp, smaller by some auto-tuned threshold, e.g. 30 degrees
@@ -86,7 +86,7 @@ Maybe. This is a work in progress.
 Microsoft has a continued interest in supporting a thriving OpenStreetMap ecosystem.
 
 #### Should we import the data into OpenStreetMap?
-Maybe. Never overwrite the hard work of other contributors or blindly import data into OSM without first checking the local quality. While our metrics show that this data meets or exceeds the quality of hand drawn building footprints, the data does vary in quality from place to place, between rural and urban, mountains and plains, and so on. Inspect quality locally and discuss an import plan with the community. Always follow the [OSM import community guidelines](https://wiki.openstreetmap.org/wiki/Import/Guidelines).
+Maybe. Never overwrite the hard work of other contributors or blindly import data into OSM without first checking the local quality. While our metrics show that this data meets or exceeds the quality of hand-drawn building footprints, the data does vary in quality from place to place, between rural and urban, mountains and plains, and so on. Inspect quality locally and discuss an import plan with the community. Always follow the [OSM import community guidelines](https://wiki.openstreetmap.org/wiki/Import/Guidelines).
 
 ### External References
 The building data are featured in a recent [NYTimes article](https://www.nytimes.com/interactive/2018/10/12/us/map-of-every-building-in-the-united-states.html)

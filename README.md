@@ -76,9 +76,6 @@ Our metrics show that in the vast majority of cases the quality is at least as g
 ### What is the coordinate reference system?
 EPSG: 4326
 
-#### Will Microsoft be open sourcing the models?
-Yes. We are working through the internal process to open source the segmentation models and polygonization algorithms.
-
 #### Will there be more data coming for other geographies?
 Maybe. This is a work in progress.
 

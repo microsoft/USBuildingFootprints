@@ -1,95 +1,117 @@
-Introduction
--------------------
-This dataset contains 125,192,184 computer generated building footprints in all 50 US states. This data is freely available for download and use.
+## Introduction
 
-License
--------------------
+Microsoft Maps is releasing country wide open building footprints datasets in United States. This dataset contains 131,962,799 computer generated building footprints derived using our computer vision algorithms on satellite imagery. This data is freely available for download and use.
+
+## License
+
 This data is licensed by Microsoft under the [Open Data Commons Open Database License (ODbL)](https://opendatacommons.org/licenses/odbl/)
 
-## FAQ
-#### What the data include:
-125,192,184 building footprint polygon geometries in all 50 US States in GeoJSON format.
+## Data Vintage
 
-#### What is the GeoJson format?
-GeoJSON is a format for encoding a variety of geographic data structures. 
+The vintage of the footprints depends on the vintage of the underlying imagery. Bing Imagery is a composite of multiple sources with different capture dates. Each building footprint has a capture date tag associated if we were able to deduce the vintage of imagery source.
+
+Footprints inside the highlighted [region](http://geojson.org/) on the map are from 2019-2020. There are 73,250,745 such building footprints. The rest of the footprints are extracted from older images, having wider range of capture dates, averaging 2012 year approximately.
+
+![Update regions](/images/update_regions.jpg)
+
+## FAQ
+
+### What the data include?
+
+131,962,799 building footprint polygon geometries divided by 51 US states in GeoJSON format.
+
+### Why is the data being released?
+Microsoft has a continued interest in supporting a thriving OpenStreetMap ecosystem.
+
+### What is the GeoJson format?
+
+GeoJSON is a format for encoding a variety of geographic data structures.
 For Intensive Documentation and Tutorials, Refer to [GeoJson Blog](http://geojson.org/)
 
-#### Creation Details:
+### What is the creation process for this data?
+
 The building extraction is done in two stages:
-1.	Semantic Segmentation – Recognizing building pixels on the aerial image using DNNs
-2.	Polygonization – Converting building pixel blobs into polygons
-### Semantic Segmentation
-![](/images/segmentation.png)
 
+1. Semantic Segmentation – Recognizing building pixels on the aerial image using DNNs
+2. Polygonization – Converting building pixel blobs into polygons
 
-#### DNN architecture
-The network foundation is ResNet34 which can be found [here](https://github.com/Microsoft/CNTK/blob/master/PretrainedModels/Image.md#resnet). In order to produce pixel prediction output, we have appended RefineNet upsampling layers described in this [paper](https://arxiv.org/abs/1611.06612).
+#### Stage1: Semantic Segmentation
+
+![Semantic Segmentation](/images/segmentation.jpg)
+
+##### DNN architecture
+
+The network architecture is ResNet34 which can be found [here](https://github.com/Microsoft/CNTK/blob/master/PretrainedModels/Image.md#resnet). In order to produce pixel prediction output, we have appended RefineNet upsampling layers described in this [paper](https://arxiv.org/abs/1611.06612).
 The model is fully-convolutional, meaning that the model can be applied to an image of any size (constrained by GPU memory, 4096x4096 in our case).
 
-#### Training details
+##### Training details
+
 The training set consists of 5 million labeled images. Majority of the satellite images cover diverse residential areas in the US. For the sake of good set representation, we have enriched the set with samples from various areas covering mountains, glaciers, forests, deserts, beaches, coasts, etc.
 Images in the set are of 256x256 pixel size with 1 ft/pixel resolution.
-The training is done with CNTK toolkit using 32 GPUs.
 
-#### Metrics
+#### Stage 2: Polygonization
+
+![Polygonization](/images/polygonization.jpg)
+
+##### Method description
+
+We developed a method that approximates the prediction pixels into polygons making decisions based on the whole prediction feature space. This is very different from standard approaches, e.g. the Douglas-Peucker algorithm, which are greedy in nature. The method tries to impose some of a priori building properties, which is, at the moment, manually defined and automatically tuned. Some of these a priori properties are:
+
+### How good is the data?
+
+Our metrics show that in the vast majority of cases the quality is at least as good as data hand digitized buildings in OpenStreetMap.
+
+#### DNN model metrics
+
 These are the intermediate stage metrics we use to track DNN model improvements and they are pixel based.
-The pixel error on the evaluation set is 1.15%.
 Pixel recall/precision = 94.5%/94.5%
 
-### Polygonization
-![](/images/polygonization.PNG)
+#### Polygon evaluation metrics
 
-#### Method description
-We developed a method that approximates the prediction pixels into polygons making decisions based on the whole prediction feature space. This is very different from standard approaches, e.g. the Douglas-Peucker algorithm, which are greedy in nature. The method tries to impose some of a priori building properties, which is, at the moment, manually defined and automatically tuned. Some of these a priori properties are:
-1. The building edge must be of at least some length, both relative and absolute, e.g. 3 meters
-2. Consecutive edge angles are likely to be 90 degrees
-3. Consecutive angles cannot be very sharp, smaller by some auto-tuned threshold, e.g. 30 degrees
-4. Building angles likely have very few dominant angles, meaning all building edges are forming an angle of (dominant angle _&pm;_ n&pi;/2)
-
-In near future, we will be looking to deduce this automatically from existing building information.
-
-#### Metrics
 Building matching metrics:
 
 | Metric | Value |
 | --- | :---: |
-| Precision | 99.3% |
-| Recall | 93.5% |
+| Precision | 98.5% |
+| Recall | 92.4% |
 
 We track various metrics to measure the quality of the output:
+
 1. Intersection over Union – This is the standard metric measuring the overlap quality against the labels
 2. Shape distance – With this metric we measure the polygon outline similarity
 3. Dominant angle rotation error – This measures the polygon rotation deviation
 
-![](/images/bldgmetrics.JPG)
+![Building metrics](/images/bldgmetrics.JPG)
 
 On our evaluation set contains ~15k building. The metrics on the set are:
-- IoU is 0.85, Shape distance is 0.33, Average rotation error is 1.6 degrees
-- The metrics are better or similar compared to OSM building metrics against the labels
 
-#### Data Vintage
-The vintage of the footprints depends on the vintage of the underlying imagery. Because Bing Imagery is a composite of multiple sources it is difficult to know the exact dates for individual pieces of data.
+| IoU | Shape distance | Rotation error [deg] |
+| :---: | :---: | :---: |
+|  0.86 | 0.4 | 2.5 |
 
-#### How good are the data?
-Our metrics show that in the vast majority of cases the quality is at least as good as data hand digitized buildings in OpenStreetMap. It is not perfect, particularly in dense urban areas but it is still awesome.
+#### False positive ratio in the corpus
+
+We estimate <1% false postive ratio in 1000 randomly sampled buildings from the entire output corpus.
 
 ### What is the coordinate reference system?
+
 EPSG: 4326
 
-#### Will there be more data coming for other geographies?
+### Will there be more data coming for other geographies?
+
 Maybe. This is a work in progress.
 
-#### Why is the data being released?
-Microsoft has a continued interest in supporting a thriving OpenStreetMap ecosystem.
+### Should we import the data into OpenStreetMap?
 
-#### Should we import the data into OpenStreetMap?
 Maybe. Never overwrite the hard work of other contributors or blindly import data into OSM without first checking the local quality. While our metrics show that this data meets or exceeds the quality of hand-drawn building footprints, the data does vary in quality from place to place, between rural and urban, mountains and plains, and so on. Inspect quality locally and discuss an import plan with the community. Always follow the [OSM import community guidelines](https://wiki.openstreetmap.org/wiki/Import/Guidelines).
 
-### External References
-The building data are featured in a recent [NYTimes article](https://www.nytimes.com/interactive/2018/10/12/us/map-of-every-building-in-the-united-states.html)
+## External References
 
-A Vector Tile implementation of the data is hosted by [Esri](https://www.arcgis.com/home/item.html?id=f40326b0dea54330ae39584012807126)
+The building data are featured in [NYTimes article](https://www.nytimes.com/interactive/2018/10/12/us/map-of-every-building-in-the-united-states.html).
 
+A Vector Tile implementation of the data is hosted by [Esri](https://www.arcgis.com/home/item.html?id=f40326b0dea54330ae39584012807126).
+
+## Download links
 
 | State         | Number of Buildings  | Unzipped MB |
 | ------------- |:-------------:| -----:|
@@ -145,22 +167,7 @@ A Vector Tile implementation of the data is hosted by [Esri](https://www.arcgis.
 | [Wisconsin](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/Wisconsin.zip)|3,054,452|654|
 | [Wyoming](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/Wyoming.zip)|380,772|83|
 
-
-
-
-
-
-
-
-
-
-
-
-
-<br>
-<br>
-
-# Contributing
+## Contributing
 
 This project welcomes contributions and suggestions.  Most contributions require you to agree to a
 Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
@@ -174,7 +181,7 @@ This project has adopted the [Microsoft Open Source Code of Conduct](https://ope
 For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
 contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
 
-# Legal Notices
+## Legal Notices
 
 Microsoft, Windows, Microsoft Azure and/or other Microsoft products and services referenced in the documentation
 may be either trademarks or registered trademarks of Microsoft in the United States and/or other countries.

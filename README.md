@@ -12,7 +12,9 @@ This data is licensed by Microsoft under the [Open Data Commons Open Database Li
 
 The vintage of the footprints depends on the vintage of the underlying imagery. Bing Imagery is a composite of multiple sources with different capture dates. Each building footprint has a capture date tag associated if we were able to deduce the vintage of imagery source.
 
-Footprints inside the highlighted [region](https://usbuildingdata.blob.core.windows.net/usbuildings-v2/US_areas_L13.geojson) on the map are from 2019-2020. There are 73,250,745 such building footprints. The rest of the footprints are extracted from older images, having wider range of capture dates, averaging 2012 year approximately.
+Footprints inside the highlighted [region](https://usbuildingdata.blob.core.windows.net/usbuildings-v2/US_areas_L13.geojson) on the map are from 2019-2020. There are 73,250,745 such building footprints. This is the focal area where we rerun extraction for the latest release.
+
+The rest of the footprints are extracted from older images, having wider range of capture dates, averaging 2012 year approximately. We have reused footprints from the previous releases in this area.
 
 ![Update regions](/images/update_regions.jpg)
 

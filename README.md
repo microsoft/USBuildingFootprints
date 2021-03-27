@@ -33,6 +33,14 @@ Microsoft has a continued interest in supporting a thriving OpenStreetMap ecosys
 GeoJSON is a format for encoding a variety of geographic data structures.
 For Intensive Documentation and Tutorials, Refer to [GeoJson Blog](http://geojson.org/).
 
+### Should we import the data into OpenStreetMap?
+
+Maybe. Never overwrite the hard work of other contributors or blindly import data into OSM without first checking the local quality. While our metrics show that this data meets or exceeds the quality of hand-drawn building footprints, the data does vary in quality from place to place, between rural and urban, mountains and plains, and so on. Inspect quality locally and discuss an import plan with the community. Always follow the [OSM import community guidelines](https://wiki.openstreetmap.org/wiki/Import/Guidelines).
+
+### Will the data be used or made available in larger OpenStreetMap ecosystem?
+
+Yes. Currently Microsoft Open Buildings dataset is used in ml-enabler for task creation. You can try it out at [AI assisted Tasking Manager](https://tasks-assisted.hotosm.org/). The data will also be made avaialble in Facebook [RapiD](https://mapwith.ai/rapid#background=Bing&disable_features=boundaries&map=2.00/0.0/0.0).
+
 ### What is the creation process for this data?
 
 The building extraction is done in two stages:
@@ -44,15 +52,9 @@ The building extraction is done in two stages:
 
 ![Semantic Segmentation](/images/segmentation.jpg)
 
-##### DNN architecture
+##### DNN architecture and training
 
-The network architecture is ResNet34 which can be found [here](https://github.com/Microsoft/CNTK/blob/master/PretrainedModels/Image.md#resnet). In order to produce pixel prediction output, we have appended RefineNet upsampling layers described in this [paper](https://arxiv.org/abs/1611.06612).
-The model is fully-convolutional, meaning that the model can be applied to an image of any size (constrained by GPU memory, 4096x4096 in our case).
-
-##### Training details
-
-The training set consists of 5 million labeled images. Majority of the satellite images cover diverse residential areas in the US. For the sake of good set representation, we have enriched the set with samples from various areas covering mountains, glaciers, forests, deserts, beaches, coasts, etc.
-Images in the set are of 256x256 pixel size with 1 ft/pixel resolution.
+The network backbone we used is EfficientNet described [here](https://arxiv.org/abs/1905.11946). Although we have millions of labels at our disposal, we found that an effective combination of supervised and unsupervised training yields the best results.
 
 #### Stage 2: Polygonization
 
@@ -69,7 +71,7 @@ Our metrics show that in the vast majority of cases the quality is at least as g
 #### DNN model metrics
 
 These are the intermediate stage metrics we use to track DNN model improvements and they are pixel based.
-Pixel recall/precision = 94.5%/94.5%
+Pixel recall/precision = 95.5%/94.0%
 
 #### Polygon evaluation metrics
 
@@ -105,10 +107,6 @@ EPSG: 4326
 ### Will there be more data coming for other geographies?
 
 Maybe. This is a work in progress.
-
-### Should we import the data into OpenStreetMap?
-
-Maybe. Never overwrite the hard work of other contributors or blindly import data into OSM without first checking the local quality. While our metrics show that this data meets or exceeds the quality of hand-drawn building footprints, the data does vary in quality from place to place, between rural and urban, mountains and plains, and so on. Inspect quality locally and discuss an import plan with the community. Always follow the [OSM import community guidelines](https://wiki.openstreetmap.org/wiki/Import/Guidelines).
 
 ## External References
 

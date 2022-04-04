@@ -39,7 +39,7 @@ Maybe. Never overwrite the hard work of other contributors or blindly import dat
 
 ### Will the data be used or made available in larger OpenStreetMap ecosystem?
 
-Yes. Currently Microsoft Open Buildings dataset is used in ml-enabler for task creation. You can try it out at [AI assisted Tasking Manager](https://tasks-assisted.hotosm.org/). The data will also be made avaialble in Facebook [RapiD](https://mapwith.ai/rapid#background=Bing&disable_features=boundaries&map=2.00/0.0/0.0).
+Yes. Currently Microsoft Open Buildings dataset is used in ml-enabler for task creation. You can try it out at [AI assisted Tasking Manager](https://tasks-assisted.hotosm.org/). The data will also be made available in Facebook [RapiD](https://mapwith.ai/rapid#background=Bing&disable_features=boundaries&map=2.00/0.0/0.0).
 
 ### What is the creation process for this data?
 
@@ -98,7 +98,7 @@ On our evaluation set contains ~15k building. The metrics on the set are:
 
 #### False positive ratio in the corpus
 
-We estimate <1% false postive ratio in 1000 randomly sampled buildings from the entire output corpus.
+We estimate <1% false positive ratio in 1000 randomly sampled buildings from the entire output corpus.
 
 ### What is the coordinate reference system?
 

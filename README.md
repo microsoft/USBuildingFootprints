@@ -22,7 +22,7 @@ The rest of the footprints were extracted from older images, having wider range 
 
 ### What the data include?
 
-129,591,852 building footprint polygon geometries divided by 51 US states in GeoJSON format.
+129,591,852 building footprint polygon geometries divided by 50 US states and the District of Columbia in GeoJSON format.
 
 ### Why is the data being released?
 
@@ -116,8 +116,8 @@ A Vector Tile implementation of the data is hosted by [Esri](https://www.arcgis.
 
 ## Download links
 
-| State         | Number of Buildings  | Unzipped size |
-| ------------- |:-------------:| -----:|
+| State or district | Number of Buildings  | Unzipped size |
+| ----------------- |:-------------:| -----:|
 | [Alabama](https://usbuildingdata.blob.core.windows.net/usbuildings-v2/Alabama.geojson.zip)|2,455,168|672.58 MiB|
 | [Alaska](https://usbuildingdata.blob.core.windows.net/usbuildings-v2/Alaska.geojson.zip)|111,042|30.00 MiB|
 | [Arizona](https://usbuildingdata.blob.core.windows.net/usbuildings-v2/Arizona.geojson.zip)|2,738,732|806.59 MiB|

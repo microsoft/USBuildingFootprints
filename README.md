@@ -106,7 +106,7 @@ EPSG: 4326
 
 ### Will there be more data coming for other geographies?
 
-Maybe. This is a work in progress.
+They are [already available](https://github.com/microsoft/GlobalMLBuildingFootprints).
 
 ## External References
 

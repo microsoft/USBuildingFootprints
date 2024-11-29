@@ -20,7 +20,7 @@ The rest of the footprints were extracted from older images, having wider range 
 
 ## FAQ
 
-### What the data include?
+### What does the data include?
 
 129,591,852 building footprint polygon geometries divided by 50 US states and the District of Columbia in GeoJSON format.
 
